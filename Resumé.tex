@@ -1,0 +1,76 @@
+\documentclass[10pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[roman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+% personal data
+\firstname{Timothy}
+\familyname{Andrew}
+\title{\Large Software Engineer \& UI Designer}               % optional, remove the line if not wanted
+%\address{street and number}{postcode city}    % optional, remove the line if not wanted
+\mobile{+91 9632693686}                    % optional, remove the line if not wanted
+%\phone{080 41664170}                      % optional, remove the line if not wanted                          
+\email{mail@timothyandrew.net}                      % optional, remove the line if not wanted
+\homepage{www.timothyandrew.net}                % optional, remove the line if not wanted
+\extrainfo{
+					 {\Colorhref[white]{http://xkcd.com/208/}{....................}}@timothyandrew         
+					 {\Colorhref{http://xkcd.com/208/}{(gist.)}}github.com/timothyandrew                                                 
+					in.linkedin.com/in/timothyandrew
+					}
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\newcommand\myitem{\item[\textbullet] }
+\definecolor{darkgray}{rgb}{0.2,0.2,0.2}
+\definecolor{gray}{rgb}{0.6,0.6,0.6}
+\newcommand\Colorhref[3][gray]{\href{#2}{\small\color{#1}#3}}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2008-2012}{B.E., Computer Science}{CMR Institute of Technology}{Bangalore}{}{Some description goes here}  % arguments 3 to 6 can be left empty
+\cventry{2006-2008}{Pre-University}{Christ Junior College}{Bangalore}{}{}
+
+\section{Experience}
+\subsection{Professional}
+\cventry{2010-2011}{Software Engineering Intern}{SuccessFactors Inc.}{Bangalore}{}{
+\begin{itemize}\setlength\itemindent{6pt}
+		\myitem Helped convert a \textit{Report Builder} app from Flex/Actionscript to HTML5/Javascript.
+		\myitem Learned a lot about usability and cross-browser design (most clients used IE6).
+		\myitem Reworked a number of design decisions with the UX team.
+\end{itemize}}
+\subsection{Miscellaneous}
+\cventry{2011}{Of Rusty Nails and Wounded Hearts}{IMC}{Bangalore}{}{A theater production by the young people of the Indiranagar Methodist Church.
+\begin{itemize}\setlength\itemindent{6pt}
+		\myitem Designed the media for the play, including posters, banner ads, tickets and a website.
+		\myitem Ran a social media campaign for the play, targeting Facebook and Twitter.
+		\myitem Helped managing live sound, including a soundtrack and some sound effects.
+		\myitem Designed and typeset a souvenir given to all attendees.
+\end{itemize}}
+
+
+\section{Skills}
+\subsection{Good Working Knowledge}
+\cvcomputer{Programming}{C, C++, Java, Ruby}{Web}{HTML/CSS, Javascript}
+\cvcomputer{OS}{OS X, Linux, Windows}{SCM}{Git, Subversion}
+\cvcomputer{Misc}{Typography, {\Colorhref[darkgray]{http://xkcd.com/208/}{Regular Expressions}}, UI Design, Bash}{}{}
+\subsection{Cursory Knowledge}
+\cvcomputer{Web}{SQL, Ruby on Rails, Sinatra, Backbone, Coffeescript, Node.js, Socket.IO, Memcached}{Misc}{Python, Android, \LaTeX}
+\subsection{Misc}
+\cvcomputer{Other Skills}{Touch typing, Eye for detail, Fast learner}{}{}
+
+\section{Leisure and Hobbies}
+\cvline{Music}{\small Bass Guitar (worship band), Acoustic Guitar, Choir singing. Studied Piano for 8 years.}
+\cvline{Misc}{\small Play snooker, table tennis and fooseball. F1 Fan. I enjoy a good steak!}
+\end{document}
