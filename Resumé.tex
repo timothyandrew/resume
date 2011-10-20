@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[11.5pt,a4paper]{moderncv}
 
 % moderncv themes
 \moderncvtheme[roman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -6,14 +6,18 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%\usepackage[LY1]{fontenc}
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.85]{geometry}
+
+%\usepackage[T1]{fontenc}
+%\usepackage{mathpazo}
 
 % personal data
 \firstname{Timothy}
 \familyname{Andrew}
-%\title{\Large Software Engineer \& UI Designer}               % optional, remove the line if not wanted
+\title{{\Colorhref[white]{.}{.}}}               % optional, remove the line if not wanted
 %\address{street and number}{postcode city}    % optional, remove the line if not wanted
 \mobile{+91 9632693686}                    % optional, remove the line if not wanted
 %\phone{080 41664170}                      % optional, remove the line if not wanted                          
@@ -35,6 +39,7 @@
 \definecolor{gray}{rgb}{0.6,0.6,0.6}
 \newcommand\Colorhref[3][gray]{\href{#2}{\color{#1}#3}}
 
+
 \begin{document}
 \maketitle
 
@@ -46,15 +51,16 @@
 \subsection{Professional}
 \cventry{2010-2011}{Software Engineering Intern}{SuccessFactors Inc.}{Bangalore}{}{
 \begin{itemize}\setlength\itemindent{6pt}
-		\myitem Helped convert a \textit{Report Builder} app from Flex/Actionscript to HTML5/Javascript.
-		\myitem Learned a lot about usability and cross-browser design (most clients used IE6).
+		\myitem Helped rewrite a \textit{Report Builder} Flex app to HTML/Javascript.
+		\myitem Wrote Javascript code in JUIC, an in-house framework.
+		\myitem Created usable, cross-browser compatible UIs (most clients used IE6).
 		\myitem Reworked a number of design decisions with the UX team.
 \end{itemize}}
 \subsection{Miscellaneous}
 \cventry{2011}{Of Rusty Nails and Wounded Hearts}{IMC}{Bangalore}{}{A theater production by the young people of the Indiranagar Methodist Church.
 \begin{itemize}\setlength\itemindent{6pt}
 		\myitem Designed the media for the play, including posters, banner ads, tickets and a website.
-		\myitem Ran a social media campaign for the play, targeting Facebook and Twitter.
+		\myitem Ran a social media campaign targeting Facebook and Twitter.
 		\myitem Helped managing live sound, including a soundtrack and some sound effects.
 		\myitem Designed and typeset a souvenir given to all attendees.
 \end{itemize}}
@@ -62,14 +68,14 @@
 
 \section{Skills}
 \subsection{Good Working Knowledge}
-\cvcomputer{Programming}{C, C++, Java, Ruby}{Web}{HTML/CSS, Javascript}
+\cvcomputer{Programming}{C, Java, Ruby}{Web}{HTML, CSS, Javascript}
 \cvcomputer{OS}{OS X, Linux, Windows}{SCM}{Git, Subversion}
 \cvcomputer{Misc}{Typography, {\Colorhref[darkgray]{http://xkcd.com/208/}{Regular Expressions}}, UI Design, Bash, Photoshop}{}{}
 \subsection{Cursory Knowledge}
 \cvcomputer{Programming}{C\#}{Misc}{Python, Android, \LaTeX}
 \cvcomputer{Web}{SQL, Ruby on Rails, Sinatra, Backbone, Coffeescript, Node.js, Socket.IO, Memcached, jQuery}{}{}
 \subsection{Misc}
-\cvcomputer{Other Skills}{Touch typing, Eye for detail, Fast learner}{}{}
+\cvcomputer{Other Skills}{Touch typing, Eye for detail, Fast learner}{Editor/IDE}{Vim, Textmate, Eclipse, SL2}
 
 \section{Achievements}
 \cventry{2011}{Runners-Up at National Finals}{Infosys Aspirations 2020}{}{}{
