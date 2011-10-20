@@ -1,0 +1,75 @@
+\documentclass[14pt,a4paper]{moderncv}
+
+
+% moderncv themes
+\moderncvtheme[roman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%\usepackage[LY1]{fontenc}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+%\usepackage[T1]{fontenc}
+%\usepackage{mathpazo}
+
+% personal data
+\firstname{}
+\familyname{Timothy Andrew}
+\title{{\Colorhref[white]{.}{.}}}               % optional, remove the line if not wanted
+%\address{street and number}{postcode city}    % optional, remove the line if not wanted
+\mobile{+91 9632693686}                    % optional, remove the line if not wanted
+%\phone{080 41664170}                      % optional, remove the line if not wanted                          
+\email{tim@timothyandrew.net}                      % optional, remove the line if not wanted
+\homepage{www.timothyandrew.net}                % optional, remove the line if not wanted
+\extrainfo{
+					}
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\newcommand\myitem{\item[\textbullet] }
+\definecolor{darkgray}{rgb}{0.2,0.2,0.2}
+\definecolor{gray}{rgb}{0.6,0.6,0.6}
+\newcommand\Colorhref[3][gray]{\href{#2}{\color{#1}#3}}
+
+
+\begin{document}
+	
+\linespread{1.3}
+
+\section{	\fontsize{20}{22}
+	\selectfont Recommendations}
+\cventry{}{}{}{}{}{
+\rmfamily
+\fontsize{11.5}{14}
+\selectfont
+\emph{“Timothy is one of the few people I have met in my career with an innate talent for software engineering. He has a fluid grasp of coding techniques and adjusts them quickly to deliver the end result. He was working mostly with front end technologies at SuccessFactors. He is a good team player and can collaborate and contribute from the get go of a project.”}
+\fontfamily{fxl}
+\fontsize{13}{13}
+\selectfont
+\begin{flushright}Deepjoy Majumdar\\\color{gray}{\emph{Lead Software Engineer, SuccessFactors}}\end{flushright}
+}
+\newline
+\newline
+\newline
+\cventry{}{}{}{}{}{
+%\fontfamily{fxl}
+\rmfamily
+\fontsize{11.5}{14}
+\selectfont
+\emph{“Timothy aka Timmy, is a bright young man with a keen mind. He has been instrumental in raising the bar, and consequently the quality of the work that came out of the production team.\\ \\
+His razor sharp sense of logic and ability to articulate his thoughts and ideas along with the remarkable empathy that he is able to demonstrate makes him the best team player I have had the privilege to associate myself with.\\\\
+He is creative and has finely tuned problem solving skills that ensure that he is the best person to have around in times of crisis. He is rarely flustered and ensures that the team is always brimming with a quiet confidence. \\\\
+His tendency to retreat into a shell is sometimes misconstrued as being taciturn but I have learnt, in my time with Timmy, that this is a phase when he recoups his resources and is engaged in analyzing a situation and weighing his response. To my mind, this is emotional maturity beyond his years! \\\\
+I wish Timmy all the very best in his future endeavours and am sure that any team that he is a part of, will have an unfair advantage over the others, coz he will ensure that the whole team succeeds together, every time!”}
+\fontfamily{fxl}
+\fontsize{13}{13}
+\selectfont
+\begin{flushright}VC John\\\color{gray}{\emph{Market Manager, Growth Markets - Systems Software, IBM}}\end{flushright}
+}
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[20pt,a4paper]{moderncv}
+
+
+% moderncv themes
+\moderncvtheme[roman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%\usepackage[LY1]{fontenc}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+%\usepackage[T1]{fontenc}
+%\usepackage{mathpazo}
+
+% personal data
+\firstname{}
+\familyname{Timothy Andrew}
+\title{{\Colorhref[white]{.}{.}}}               % optional, remove the line if not wanted
+%\address{street and number}{postcode city}    % optional, remove the line if not wanted
+\mobile{+91 9632693686}                    % optional, remove the line if not wanted
+%\phone{080 41664170}                      % optional, remove the line if not wanted                          
+\email{tim@timothyandrew.net}                      % optional, remove the line if not wanted
+\homepage{www.timothyandrew.net}                % optional, remove the line if not wanted
+\extrainfo{
+					}
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\newcommand\myitem{\item[\textbullet] }
+\definecolor{darkgray}{rgb}{0.2,0.2,0.2}
+\definecolor{gray}{rgb}{0.35,0.35,0.35}
+\newcommand\Colorhref[3][gray]{\href{#2}{\color{#1}#3}}
+
+
+\begin{document}
+	
+\linespread{1.3}
+
+\rmfamily
+\fontsize{11.5}{14}
+\selectfont
+\vspace*{\fill}
+{
+\begin{center}
+\rmfamily
+\fontsize{17}{18}
+\selectfont
+\emph{\color{gray}{Hello}.}\\[15pt]
+\end{center}
+I'm Timothy Andrew; student at CMR Institute of Technology,
+studying for a degree in Computer Science Engineering.
+I'd like to apply for a job at \emph{C42} during your campus placements.\\[10pt]
+I think I'd be a good fit because:
+\begin{itemize}\setlength\itemindent{6pt}
+	\myitem I'm interested in UI/UX design, and web app development is a great way to explore that area.
+	\myitem The culture of a company is immensely important to me – \emph{C42} fits the bill!
+	\myitem I enjoy the challenge of learning new things and adapting to them quickly.
+	\myitem I want to work with like-minded people.
+	\myitem I \emph{love} Ruby!\\[5pt]
+\end{itemize}
+Thank you!\\[10pt]
+\emph{Best,}
+\\[45pt]
+\fontfamily{fxl}
+\fontsize{15}{15}
+\selectfont
+{\emph{Timothy Andrew}}
+
+       }
+\vspace*{\fill}
+
+\end{document}
